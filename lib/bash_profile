@@ -1,0 +1,40 @@
+# bash_profileのデフォルト設定を書くファイル
+#
+# インストールする場所が変わるものは環境ごとに調整する
+# 1. Goコンパイラ(GOROOT)
+#
+# 入れるかどうか分からないものも環境ごとに書く
+# 1. Nixpkgs
+# 2. Cocoapods
+
+# Plan 9
+#/mnt/font/HiraKakuPro-W3/14a/font
+export font=/mnt/font/GoMono/14a/font
+export secstore=localhost	# /lib/ndbに書くべきか...
+export BROWSER=safari		# safari or google-chrome
+
+# golang
+export GOROOT_BOOTSTRAP=~/go1.4
+export GOPATH=~
+export PATH=$PATH:$GOPATH/bin
+#export PATH=$PATH:~/go/bin
+
+# GCP
+export PATH=$PATH:~/pkg/google-cloud-sdk/bin
+
+# Nixpkgs
+#export NIX_PATH=nixpkgs=~/nixpkgs:$NIX_PATH
+
+# NodeJS
+export NPM_PACKAGES=~/pkg/nodejs
+export NODE_PATH=$NODE_PATH:$NPM_PACKAGES/lib/node_modules
+export PATH=$PATH:$NPM_PACKAGES/bin
+
+# Ruby
+#export GEM_HOME=~/pkg/gem/ruby/$(ruby -e 'puts RUBY_VERSION')
+#export PATH=$PATH:$GEM_HOME/bin
+
+# Cocoapods
+#export CP_HOME_DIR=~/pkg/cocoapods
+
+export LESSHISTFILE=-
