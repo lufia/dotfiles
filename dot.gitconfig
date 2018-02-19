@@ -1,0 +1,14 @@
+[user]
+	name = lufia
+	email = lufia@lufia.org
+[core]
+	excludesfile = ~/lib/git/gitignore_global
+	precomposeunicode = true
+[push]
+	default = simple
+[color]
+	ui = auto
+[init]
+	templatedir = ~/lib/git
+[http]
+	cookiefile = ~/lib/git/gitcookies
