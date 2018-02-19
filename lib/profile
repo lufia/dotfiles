@@ -1,0 +1,19 @@
+if(~ $#PLAN9 0)
+	PLAN9=/usr/local/plan9
+path=($PLAN9/bin $path)
+
+fn cd { builtin cd $* && awd } # for acme
+
+# Secstore setup
+# mkdir -m 755 $PLAN9/secstore
+# cat >$PLAN9/ndb/auth
+# hostid=bootes
+# 	uid=!sys uid=!adm uid=*
+#secstored
+
+#eval $(9 ssh-agent -e)
+#factotum
+
+## key gen
+#openssl rsa -in .ssh/id_rsa -outform pem | pemdecode 'RSA PRIVATE KEY' | asn12rsa >rsa2
+#(key proto=rsa service=ssh-rsa size=...のように、serviceを追加)
