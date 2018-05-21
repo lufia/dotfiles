@@ -14,10 +14,10 @@ export secstore=localhost	# /lib/ndbに書くべきか...
 export BROWSER=safari		# safari or google-chrome
 
 # golang
-export GOROOT_BOOTSTRAP=~/go1.4
+export PATH=$PATH:~/go/bin
 export GOPATH=~
 export PATH=$PATH:$GOPATH/bin
-#export PATH=$PATH:~/go/bin
+export GOROOT_BOOTSTRAP=~/go1.9
 
 # GCP
 export PATH=$PATH:~/pkg/google-cloud-sdk/bin
