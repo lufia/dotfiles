@@ -7,6 +7,7 @@
 [push]
 	default = simple
 [color]
+	diff = auto
 	ui = auto
 [init]
 	templatedir = ~/lib/git
