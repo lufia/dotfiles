@@ -31,6 +31,7 @@ if [[ -f $NVM_DIR/nvm.sh ]]
 then
 	. $NVM_DIR/nvm.sh
 fi
+export NPM_CONFIG_USERCONFIG=~/lib/npmrc
 
 # Ruby
 #export GEM_HOME=~/pkg/gem/ruby/$(ruby -e 'puts RUBY_VERSION')
