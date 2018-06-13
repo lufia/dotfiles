@@ -1,1 +1,2 @@
 cache = ~/pkg/npm
+prefix = ~/pkg/nodejs

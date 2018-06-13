@@ -26,12 +26,10 @@ export PATH=$PATH:~/pkg/google-cloud-sdk/bin
 #export NIX_PATH=nixpkgs=~/nixpkgs:$NIX_PATH
 
 # NodeJS
-export NVM_DIR=~/pkg/nvm
-if [[ -f $NVM_DIR/nvm.sh ]]
-then
-	. $NVM_DIR/nvm.sh
-fi
+export N_PREFIX=~/pkg/nodejs
 export NPM_CONFIG_USERCONFIG=~/lib/npmrc
+export PATH=$PATH:~/pkg/nodejs/bin
+export MANPATH=$(manpath):~/pkg/nodejs/share/man
 
 # Ruby
 #export GEM_HOME=~/pkg/gem/ruby/$(ruby -e 'puts RUBY_VERSION')
