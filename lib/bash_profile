@@ -16,7 +16,7 @@ export BROWSER=safari		# safari or google-chrome
 # golang
 export PATH=$PATH:~/go/bin
 export GOPATH=~
-export PATH=$PATH:$GOPATH/bin
+export PATH=$GOPATH/bin:$PATH	# ~/binなので先頭に必要
 export GOROOT_BOOTSTRAP=~/go1.9
 
 # GCP
