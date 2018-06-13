@@ -10,6 +10,6 @@
 	diff = auto
 	ui = auto
 [init]
-	templatedir = ~/lib/git
+	templatedir = ~/lib/git/template
 [http]
 	cookiefile = ~/lib/git/gitcookies
