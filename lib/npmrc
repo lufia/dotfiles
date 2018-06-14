@@ -1,2 +1,4 @@
 cache = ~/pkg/npm
 prefix = ~/pkg/nodejs
+init.author.email = lufia@lufia.org
+init.author.name = lufia
