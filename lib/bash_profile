@@ -18,6 +18,7 @@ export PATH=$PATH:~/go/bin
 export GOPATH=~
 export PATH=$GOPATH/bin:$PATH	# ~/binなので先頭に必要
 export GOROOT_BOOTSTRAP=~/go1.9
+export GO111MODULE=on
 
 # GCP
 export PATH=$PATH:~/pkg/google-cloud-sdk/bin
