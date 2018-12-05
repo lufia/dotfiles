@@ -39,3 +39,7 @@ export MANPATH=$(manpath):~/pkg/nodejs/share/man
 #export CP_HOME_DIR=~/pkg/cocoapods
 
 export LESSHISTFILE=-
+
+# Envs
+export NODENV_ROOT=~/pkg/nodenv
+export RBENV_ROOT=~/pkg/rbenv
