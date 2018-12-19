@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+f=$(mktemp)
+trap 'rm -f $f; exit 1' 1 2 3 15
+
+go test -coverprofile=$f "$@"
+go tool cover -html=$f
+rm $f
