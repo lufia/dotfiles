@@ -1,6 +1,12 @@
+Host *
+	AddKeysToAgent yes
+	UseKeychain yes
+
 Host github.com
 	Hostname github.com
 	User git
 	IdentityFile ~/.ssh/id_ecdsa
 	AddKeysToAgent yes
 	UseKeychain yes
+
+Include conf.d/*.conf
