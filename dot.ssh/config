@@ -1,3 +1,5 @@
+Include conf.d/*.conf
+
 Host *
 	AddKeysToAgent yes
 	UseKeychain yes
@@ -8,5 +10,3 @@ Host github.com
 	IdentityFile ~/.ssh/id_ecdsa
 	AddKeysToAgent yes
 	UseKeychain yes
-
-Include conf.d/*.conf
