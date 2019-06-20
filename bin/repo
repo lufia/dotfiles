@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# usage: repo [-r remote] [path]
+
+set -eu
+
+if [[ $# = 0 ]]
+then
+	set .
+fi
+
+cwd=$(pwd)
+for i in "$@"
+do
+	url=$(git remote get-url origin)
+	if [[ $url =~ ^https://.*$ ]]
+	then
+		open $url
+	fi
+	cd $cwd
+done
