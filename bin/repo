@@ -11,10 +11,10 @@ fi
 cwd=$(pwd)
 for i in "$@"
 do
-	url=$(git remote get-url origin)
+	p=$(git -C "$i" remote get-url origin)
+	url="$(dirname $p)/$(basename $p .git)"
 	if [[ $url =~ ^https://.*$ ]]
 	then
-		open $url
+		open $url/pull/$(git -C "$i" symbolic-ref --short HEAD)
 	fi
-	cd $cwd
 done
