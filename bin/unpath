@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# usage: unpath pattern [command ...]
+
+case $# in
+0)	echo usage: "$(basename $0) pattern [command ...]" >&2
+	exit 2
+	;;
+esac
+pat="$1"
+shift
+
+a=''
+for i in ${PATH//:/ }
+do
+	if ! [[ $i =~ $pat ]]
+	then
+		a="$a:$i"
+	fi
+done
+if [[ $# = 0 ]]
+then
+	echo "${a:1}"
+else
+	export PATH="${a:1}"
+	exec "$@"
+fi
