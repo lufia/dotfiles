@@ -11,6 +11,7 @@ go get -u golang.org/x/tools/cmd/guru
 go get -u golang.org/x/tools/cmd/present
 go get -u golang.org/x/tools/cmd/stringer
 go get -u golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow
+go get -u golang.org/x/tools/gopls
 
 # github.com/golang
 go get -u github.com/golang/protobuf/protoc-gen-go
