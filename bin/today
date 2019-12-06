@@ -8,11 +8,15 @@ do
 	if [[ $i =~ .*\.done ]]
 	then
 		mark='[done]'
+		id=$(basename $i .done)
+	else
+		mark=''
+		id=$(basename $i .todo)
 	fi
 
 	# BSD styled
 	mtime=$(stat -f '%m' $i)
 	d=$(date -r $mtime +%Y-%m-%d)
 
-	echo '*' $d $title $mark
+	echo '*' [$id] $d $title $mark
 done

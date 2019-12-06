@@ -26,3 +26,5 @@ go get -u rsc.io/goversion
 go get -u github.com/rsc/2fa
 go get -u rsc.io/todo
 go get -u 9fans.net/go/acme/editinacme
+
+go get -u github.com/securego/gosec/cmd/gosec
