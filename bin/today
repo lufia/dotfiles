@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+files=$(find ~/todo -mtime -7 -and \( -name '*.todo' -or -name '*.done' \))
+for i in $(ls -tr $files)
+do
+	title=$(sed -n '/^title:/s///p' $i)
+	mark=''
+	if [[ $i =~ .*\.done ]]
+	then
+		mark='[done]'
+	fi
+
+	# BSD styled
+	mtime=$(stat -f '%m' $i)
+	d=$(date -r $mtime +%Y-%m-%d)
+
+	echo '*' $d $title $mark
+done
