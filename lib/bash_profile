@@ -19,6 +19,9 @@ export GOPATH=~
 export PATH=$GOPATH/bin:$PATH	# ~/binなので先頭に必要
 export GOROOT_BOOTSTRAP=~/go1.9
 
+# XDG; git etc
+#XDG_CONFIG_HOME=~/lib
+
 # GCP
 export PATH=$PATH:~/pkg/google-cloud-sdk/bin
 
