@@ -1,26 +1,23 @@
 #!/usr/bin/env bash
-# usage: unpath pattern [command ...]
+# usage: unpath [pattern ...]
 
-case $# in
-0)	echo usage: "$(basename $0) pattern [command ...]" >&2
+case $1 in
+-*)	echo usage: "$(basename $0) [pattern ...]" >&2
 	exit 2
 	;;
 esac
-pat="$1"
-shift
 
-a=''
-for i in ${PATH//:/ }
+p="$PATH"
+for pat in "$@"
 do
-	if ! [[ $i =~ $pat ]]
-	then
-		a="$a:$i"
-	fi
+	a=''
+	for i in ${PATH//:/ }
+	do
+		if ! [[ $i =~ $pat ]]
+		then
+			a="$a:$i"
+		fi
+	done
+	p="${a:1}"
 done
-if [[ $# = 0 ]]
-then
-	echo "${a:1}"
-else
-	export PATH="${a:1}"
-	exec "$@"
-fi
+echo "$p"
