@@ -29,3 +29,5 @@ go get -u rsc.io/github/issue
 go get -u 9fans.net/go/acme/editinacme
 
 go get -u github.com/securego/gosec/cmd/gosec
+
+go get -u github.com/cli/cli/cmd/gh
