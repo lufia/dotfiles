@@ -12,3 +12,5 @@ golang.org/x/tools v0.0.0-20200220224806-8a925fa4c0df h1:oQFmpjL+rb2xLkgPCpdGSAG
 golang.org/x/tools v0.0.0-20200220224806-8a925fa4c0df/go.mod h1:TB2adYChydJhpapKDTa4BR/hXlZSLoq2Wpct/0txZ28=
 golang.org/x/xerrors v0.0.0-20191011141410-1b5146add898 h1:/atklqdjdhuosWIl6AIbOeHJjicWYPqR9bpxqxYG2pA=
 golang.org/x/xerrors v0.0.0-20191011141410-1b5146add898/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
+robpike.io/ivy v0.0.0-20191204195242-5feaa23cbcf3 h1:tff9UcwX5PKD7Z+Q7O9EIILnQVm5uRY0/xP90+oXtog=
+robpike.io/ivy v0.0.0-20191204195242-5feaa23cbcf3/go.mod h1:6ebXVKNf6WX7+8pqJnyLyoSFkV2Ni8NS5Z6mz5gYHo0=
