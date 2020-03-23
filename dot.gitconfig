@@ -11,6 +11,8 @@
 	ui = auto
 [init]
 	templatedir = ~/lib/git/template
+[credential]
+	helper = factotum
 [http]
 	cookiefile = ~/lib/git/gitcookies
 [credential "https://source.developers.google.com"]
