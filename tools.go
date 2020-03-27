@@ -3,6 +3,7 @@
 package main
 
 import (
-	_ "robpike.io/ivy"
+	_ "github.com/hashicorp/terraform"
 	_ "github.com/x-motemen/blogsync"
+	_ "robpike.io/ivy"
 )
