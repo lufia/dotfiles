@@ -7,5 +7,6 @@ import (
 	_ "github.com/hashicorp/terraform"
 	_ "github.com/nektos/act"
 	_ "github.com/x-motemen/blogsync"
+	_ "golang.org/x/review/git-codereview"
 	_ "robpike.io/ivy"
 )
