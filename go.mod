@@ -3,6 +3,7 @@ module github.com/lufia/dotfiles
 go 1.13
 
 require (
+	github.com/cli/cli v0.10.1
 	github.com/go-delve/delve v1.4.1
 	github.com/hashicorp/terraform v0.12.24
 	github.com/nektos/act v0.2.10
