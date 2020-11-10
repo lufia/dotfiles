@@ -1,6 +1,6 @@
+NO_COLOR=1
 if(~ $#PLAN9 0)
 	PLAN9=/usr/local/plan9
-path=($PLAN9/bin $path)
 
 fn cd { builtin cd $* && awd } # for acme
 

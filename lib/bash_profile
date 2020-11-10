@@ -8,10 +8,13 @@
 # 2. Cocoapods
 
 # Plan 9
+export PLAN9=/usr/local/plan9
+export PATH=$PATH:$PLAN9/bin
+
 #/mnt/font/HiraKakuPro-W3/14a/font
 export font=/mnt/font/GoMono/14a/font
 export secstore=localhost	# /lib/ndbに書くべきか...
-export BROWSER=safari		# safari or google-chrome
+export BROWSER=firefox		# safari, firefox or google-chrome
 
 # golang
 export PATH=$PATH:~/go/bin
@@ -59,3 +62,8 @@ export LESSHISTFILE=-
 # Envs
 export NODENV_ROOT=~/pkg/nodenv
 export RBENV_ROOT=~/pkg/rbenv
+
+if [[ $TERM = dumb ]]
+then
+	export NO_COLOR=1
+fi
