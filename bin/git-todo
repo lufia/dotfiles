@@ -1,0 +1,4 @@
+#!/usr/local/plan9/bin/rc
+# https://twitter.com/_rsc/status/1319296132267163650
+
+git diff origin...HEAD | grepdiff '^\+.*TODO'

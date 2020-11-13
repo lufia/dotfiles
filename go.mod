@@ -13,5 +13,6 @@ require (
 	golang.org/x/review v0.0.0-20200515044942-a2b90d2f6e29
 	golang.org/x/tools v0.0.0-20200220224806-8a925fa4c0df
 	robpike.io/ivy v0.0.0-20191204195242-5feaa23cbcf3
+	rsc.io/grepdiff v1.0.0
 	sigs.k8s.io/kustomize/kustomize/v3 v3.8.6
 )

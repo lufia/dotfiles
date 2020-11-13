@@ -1250,6 +1250,8 @@ mvdan.cc/unparam v0.0.0-20190720180237-d51796306d8f/go.mod h1:4G1h5nDURzA3bwVMZI
 robpike.io/ivy v0.0.0-20191204195242-5feaa23cbcf3 h1:tff9UcwX5PKD7Z+Q7O9EIILnQVm5uRY0/xP90+oXtog=
 robpike.io/ivy v0.0.0-20191204195242-5feaa23cbcf3/go.mod h1:6ebXVKNf6WX7+8pqJnyLyoSFkV2Ni8NS5Z6mz5gYHo0=
 rsc.io/binaryregexp v0.2.0/go.mod h1:qTv7/COck+e2FymRvadv62gMdZztPaShugOCi3I+8D8=
+rsc.io/grepdiff v1.0.0 h1:h3rqalMzCz1bBrIURrkRzqqQIPBiwcmureJXS9RsIDg=
+rsc.io/grepdiff v1.0.0/go.mod h1:VzbbF+wBA1yxTXFpGZEcq2rFC5dHjmPdyR3Mxp9Mc+k=
 rsc.io/pdf v0.1.1/go.mod h1:n8OzWcQ6Sp37PL01nO98y4iUCRdTGarVfzxY20ICaU4=
 sigs.k8s.io/kustomize/api v0.6.4 h1:YIVJnBH+yngw1/1CcLH6GvJ2aEoX9jDlqVuWhfjWmYc=
 sigs.k8s.io/kustomize/api v0.6.4/go.mod h1:BX11EGGdQTCYHLMaz7oT4TKdQ8owypNlYIrUj1i5HwA=

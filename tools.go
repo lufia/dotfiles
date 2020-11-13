@@ -10,5 +10,6 @@ import (
 	_ "github.com/x-motemen/blogsync"
 	_ "golang.org/x/review/git-codereview"
 	_ "robpike.io/ivy"
+	_ "rsc.io/grepdiff"
 	_ "sigs.k8s.io/kustomize/kustomize/v3"
 )
