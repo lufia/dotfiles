@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# https://golang.org/cmd/go/#hdr-List_packages_or_modules
+go list -m -u -f '{{if and (not .Indirect) .Update}}{{.}}{{end}}' all
