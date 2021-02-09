@@ -28,6 +28,9 @@ export GOROOT_BOOTSTRAP=~/go1.9
 # GCP
 export PATH=$PATH:~/pkg/google-cloud-sdk/bin
 
+# Homebrew
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 # Nixpkgs
 #export NIX_PATH=nixpkgs=~/nixpkgs:$NIX_PATH
 
