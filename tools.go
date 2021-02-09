@@ -12,4 +12,5 @@ import (
 	_ "robpike.io/ivy"
 	_ "rsc.io/grepdiff"
 	_ "sigs.k8s.io/kustomize/kustomize/v3"
+	_ "github.com/golangci/golangci-lint/cmd/golangci-lint"
 )
