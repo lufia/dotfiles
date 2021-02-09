@@ -11,6 +11,7 @@
 	ui = auto
 [init]
 	templatedir = ~/lib/git/template
+	defaultBranch = main
 [credential]
 	helper = factotum
 [http]
