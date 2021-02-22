@@ -3,16 +3,17 @@ module github.com/lufia/dotfiles
 go 1.15
 
 require (
-	github.com/Microsoft/hcsshim v0.8.7 // indirect
-	github.com/cli/cli v0.10.1
-	github.com/go-delve/delve v1.4.1
-	github.com/hashicorp/terraform v0.12.24
-	github.com/nektos/act v0.2.16
-	github.com/ugorji/go v1.1.13 // indirect
-	github.com/x-motemen/blogsync v0.11.0
-	golang.org/x/review v0.0.0-20200515044942-a2b90d2f6e29
-	golang.org/x/tools v0.0.0-20200220224806-8a925fa4c0df
-	robpike.io/ivy v0.0.0-20191204195242-5feaa23cbcf3
+	9fans.net/go v0.0.2
+	github.com/go-delve/delve v1.6.0
+	github.com/golangci/golangci-lint v1.37.1
+	github.com/nektos/act v0.2.20
+	github.com/x-motemen/blogsync v0.12.0
+	golang.org/x/perf v0.0.0-20210220033136-40a54f11e909
+	golang.org/x/review v1.0.2
+	golang.org/x/tools v0.1.0
+	robpike.io/ivy v0.1.0
+	rsc.io/2fa v1.2.0
 	rsc.io/grepdiff v1.0.0
-	sigs.k8s.io/kustomize/kustomize/v3 v3.8.6
+	rsc.io/todo v0.0.3
+	sigs.k8s.io/kustomize/kustomize/v3 v3.10.0
 )

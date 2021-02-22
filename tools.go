@@ -3,14 +3,17 @@
 package main
 
 import (
-	_ "github.com/cli/cli/cmd/gh"
+	_ "9fans.net/go/acme/editinacme"
 	_ "github.com/go-delve/delve/cmd/dlv"
-	_ "github.com/hashicorp/terraform"
+	_ "github.com/golangci/golangci-lint/cmd/golangci-lint"
 	_ "github.com/nektos/act"
 	_ "github.com/x-motemen/blogsync"
 	_ "golang.org/x/review/git-codereview"
+	_ "golang.org/x/tools/cmd/go-contrib-init"
 	_ "robpike.io/ivy"
+	_ "rsc.io/2fa"
 	_ "rsc.io/grepdiff"
+	_ "rsc.io/todo"
 	_ "sigs.k8s.io/kustomize/kustomize/v3"
-	_ "github.com/golangci/golangci-lint/cmd/golangci-lint"
+	_ "golang.org/x/perf/cmd/benchstat"
 )

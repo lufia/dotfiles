@@ -2,9 +2,7 @@
 # go-install: installs commands for Go
 
 # golang.org/x/tools
-go get -u golang.org/x/lint/golint
-go get -u golang.org/x/perf/cmd/benchstat
-go get -u golang.org/x/tools/cmd/benchcmp
+go install golang.org/x/perf/cmd/benchstat
 go get -u golang.org/x/tools/cmd/godoc
 go get -u golang.org/x/tools/cmd/goimports
 go get -u golang.org/x/tools/cmd/guru
@@ -17,18 +15,22 @@ go get -u golang.org/x/tools/gopls
 go get -u github.com/golang/protobuf/protoc-gen-go
 
 # contributing to go
-go get -u golang.org/x/tools/cmd/go-contrib-init
-go get -u golang.org/x/review/git-codereview
+go install golang.org/x/tools/cmd/go-contrib-init
+go install golang.org/x/review/git-codereview
 
 # optional
 go get -u github.com/davidrjenni/A
-go get -u rsc.io/goversion
-go get -u github.com/rsc/2fa
-go get -u rsc.io/todo
+go install rsc.io/2fa
+go install rsc.io/todo
 go get -u rsc.io/github/issue
-go get -u 9fans.net/go/acme/editinacme
+go install 9fans.net/go/acme/editinacme
 go install robpike.io/ivy
+go install rsc.io/grepdiff
 
-go get -u github.com/securego/gosec/cmd/gosec
-
-go get -u github.com/cli/cli/cmd/gh
+#go install github.com/cli/cli/cmd/gh
+go install github.com/go-delve/delve/cmd/dlv
+#go install github.com/hashicorp/terraform
+go install github.com/nektos/act
+go install github.com/x-motemen/blogsync
+go install sigs.k8s.io/kustomize/kustomize/v3
+go install github.com/golangci/golangci-lint/cmd/golangci-lint
