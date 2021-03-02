@@ -3,16 +3,16 @@
 
 # golang.org/x/tools
 go install golang.org/x/perf/cmd/benchstat
-go get -u golang.org/x/tools/cmd/godoc
-go get -u golang.org/x/tools/cmd/goimports
+go install golang.org/x/tools/cmd/godoc
+go install golang.org/x/tools/cmd/goimports
 go get -u golang.org/x/tools/cmd/guru
 go get -u golang.org/x/tools/cmd/present
 go get -u golang.org/x/tools/cmd/stringer
 go get -u golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow
-go get -u golang.org/x/tools/gopls
+go install golang.org/x/tools/gopls
 
 # github.com/golang
-go get -u github.com/golang/protobuf/protoc-gen-go
+go install github.com/golang/protobuf/protoc-gen-go
 
 # contributing to go
 go install golang.org/x/tools/cmd/go-contrib-init
@@ -28,9 +28,10 @@ go install robpike.io/ivy
 go install rsc.io/grepdiff
 
 #go install github.com/cli/cli/cmd/gh
-go install github.com/go-delve/delve/cmd/dlv
 #go install github.com/hashicorp/terraform
+go install github.com/go-delve/delve/cmd/dlv
 go install github.com/nektos/act
+go install github.com/golangci/golangci-lint/cmd/golangci-lint
 go install github.com/x-motemen/blogsync
 go install sigs.k8s.io/kustomize/kustomize/v3
-go install github.com/golangci/golangci-lint/cmd/golangci-lint
+go install github.com/google/ko
