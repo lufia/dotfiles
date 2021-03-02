@@ -22,3 +22,5 @@
 	conflictstyle = diff3
 [pull]
 	rebase = false
+[alias]
+	wdiff = diff --word-diff-regex='[^\\x80-\\xbf][\\x80-\\xbf]*' --word-diff=color
