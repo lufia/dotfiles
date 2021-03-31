@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Notes:
+# plan9port requires to set app name to $BROWSER; it will be used, like 'open -a $BROWSER <url>'.
+# However gh calls $BROWSER, like '$BROWSER <url>'.
+# In this case firefox (Firefox.app/Contents/MacOS/firefox) will be failed with "Couldn't load XPCOM."
+
+exec open -a firefox "$@"
