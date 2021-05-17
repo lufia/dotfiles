@@ -2,21 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>EnvironmentVariables</key>
-    <dict>
-        <key>PLAN9</key>
-        <string>/usr/local/plan9</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PLAN9</key>
+		<string>/usr/local/plan9</string>
 		<key>PATH</key>
 		<string>/usr/local/plan9/bin</string>
-    </dict>
-    <key>Label</key>
-    <string>com.bell-labs.plan9.factotum</string>
-    <key>ProgramArguments</key>
-    <array>
-        <string>/usr/local/plan9/bin/factotum</string>
-    </array>
-    <key>RunAtLoad</key>
-    <false/>
+	</dict>
+	<key>Label</key>
+	<string>com.bell-labs.plan9.factotum</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/plan9/bin/factotum</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
 	<key>KeepAlive</key>
 	<dict>
 		<key>OtherJobEnabled</key>
