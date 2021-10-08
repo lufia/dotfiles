@@ -6,8 +6,8 @@ go install golang.org/x/perf/cmd/benchstat
 go install golang.org/x/tools/cmd/godoc
 go install golang.org/x/tools/cmd/goimports
 go get -u golang.org/x/tools/cmd/guru
-go get -u golang.org/x/tools/cmd/present
-go get -u golang.org/x/tools/cmd/stringer
+go install golang.org/x/tools/cmd/present
+go install golang.org/x/tools/cmd/stringer
 go get -u golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow
 go install golang.org/x/tools/gopls
 

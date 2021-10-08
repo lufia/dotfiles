@@ -21,7 +21,7 @@ require (
 
 require (
 	golang.org/x/perf v0.0.0-20180704124530-6e6d33e29852
-	golang.org/x/tools v0.1.6
+	golang.org/x/tools v0.1.7
 )
 
 require (

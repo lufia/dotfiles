@@ -1,3 +1,4 @@
+//go:build tools
 // +build tools
 
 package main
@@ -15,6 +16,8 @@ import (
 	_ "golang.org/x/tools/cmd/go-contrib-init"
 	_ "golang.org/x/tools/cmd/godoc"
 	_ "golang.org/x/tools/cmd/goimports"
+	_ "golang.org/x/tools/cmd/present"
+	_ "golang.org/x/tools/cmd/stringer"
 	_ "golang.org/x/tools/gopls"
 	_ "robpike.io/ivy"
 	_ "rsc.io/2fa"
