@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
 files=$(find ~/todo -mtime -4 -and \( -name '*.todo' -or -name '*.done' \))
+if [[ -z $files ]]
+then
+	exit 0
+fi
+
 for i in $(ls -tr $files)
 do
 	title=$(sed -n '/^title:/s///p' $i)
