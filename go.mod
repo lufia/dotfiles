@@ -20,6 +20,7 @@ require (
 )
 
 require (
+	github.com/google/codesearch v1.2.0
 	golang.org/x/perf v0.0.0-20211012211434-03971e389cd3
 	golang.org/x/tools v0.1.8-0.20211014194737-fc98fb2abd48
 )
