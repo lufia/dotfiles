@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	9fans.net/go v0.0.4 // bugfix
-	github.com/go-delve/delve v1.7.2
+	github.com/go-delve/delve v1.7.3
 	github.com/golang/protobuf v1.5.2
 	github.com/golangci/golangci-lint v1.43.0
 	github.com/google/ko v0.9.3
@@ -22,7 +22,7 @@ require (
 require (
 	github.com/google/codesearch v1.2.0
 	golang.org/x/perf v0.0.0-20211012211434-03971e389cd3
-	golang.org/x/tools v0.1.8-0.20211014194737-fc98fb2abd48
+	golang.org/x/tools v0.1.8-0.20211028023602-8de2a7fd1736
 )
 
 require (
@@ -41,7 +41,6 @@ require (
 	github.com/alessio/shellescape v1.4.1 // indirect
 	github.com/alexkohler/prealloc v1.0.0 // indirect
 	github.com/andreaskoch/go-fswatch v1.0.0 // indirect
-	github.com/aquasecurity/libbpfgo v0.1.2-0.20210708203834-4928d36fafac // indirect
 	github.com/asaskevich/govalidator v0.0.0-20190424111038-f61b66f89f4a // indirect
 	github.com/ashanbrown/forbidigo v1.2.0 // indirect
 	github.com/ashanbrown/makezero v0.0.0-20210520155254-b6261585ddde // indirect
@@ -56,6 +55,7 @@ require (
 	github.com/cespare/xxhash/v2 v2.1.1 // indirect
 	github.com/charithe/durationcheck v0.0.9 // indirect
 	github.com/chavacava/garif v0.0.0-20210405164556-e8a0a408d6af // indirect
+	github.com/cilium/ebpf v0.7.0 // indirect
 	github.com/containerd/cgroups v1.0.1 // indirect
 	github.com/containerd/containerd v1.5.2 // indirect
 	github.com/containerd/stargz-snapshotter/estargz v0.8.0 // indirect
@@ -123,7 +123,7 @@ require (
 	github.com/golangci/unconvert v0.0.0-20180507085042-28b1c447d1f4 // indirect
 	github.com/google/go-cmp v0.5.6 // indirect
 	github.com/google/go-containerregistry v0.6.0 // indirect
-	github.com/google/go-dap v0.5.1-0.20210713061233-c91b005e3987 // indirect
+	github.com/google/go-dap v0.6.0 // indirect
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
 	github.com/gordonklaus/ineffassign v0.0.0-20210225214923-2e10b2664254 // indirect
 	github.com/gostaticanalysis/analysisutil v0.7.1 // indirect
@@ -189,7 +189,7 @@ require (
 	github.com/opencontainers/image-spec v1.0.2-0.20210730191737-8e42a01fb1b7 // indirect
 	github.com/opencontainers/runc v1.0.0-rc93 // indirect
 	github.com/pelletier/go-toml v1.9.4 // indirect
-	github.com/peterh/liner v0.0.0-20170317030525-88609521dc4b // indirect
+	github.com/peterh/liner v1.2.1 // indirect
 	github.com/phayes/checkstyle v0.0.0-20170904204023-bfd46e6a821d // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
@@ -238,17 +238,17 @@ require (
 	github.com/xanzy/ssh-agent v0.3.0 // indirect
 	github.com/xlab/treeprint v0.0.0-20181112141820-a009c3971eca // indirect
 	github.com/yeya24/promlinter v0.1.0 // indirect
-	github.com/yuin/goldmark v1.4.0 // indirect
+	github.com/yuin/goldmark v1.4.1 // indirect
 	github.com/yujunz/go-getter v1.5.1-lite.0.20201201013212-6d9c071adddf // indirect
 	go.mongodb.org/mongo-driver v1.1.2 // indirect
 	go.opencensus.io v0.23.0 // indirect
 	go.starlark.net v0.0.0-20200821142938-949cc6f4b097 // indirect
 	golang.org/x/arch v0.0.0-20190927153633-4e8777c89be4 // indirect
 	golang.org/x/crypto v0.0.0-20210921155107-089bfa567519 // indirect
-	golang.org/x/mod v0.5.0 // indirect
-	golang.org/x/net v0.0.0-20210805182204-aaa1db679c0d // indirect
+	golang.org/x/mod v0.5.1 // indirect
+	golang.org/x/net v0.0.0-20211015210444-4f30a5c0130f // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
-	golang.org/x/sys v0.0.0-20211013075003-97ac67df715c // indirect
+	golang.org/x/sys v0.0.0-20211019181941-9d821ace8654 // indirect
 	golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
