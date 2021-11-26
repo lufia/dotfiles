@@ -17,7 +17,10 @@ case $1 in
 -a)	edit=B
 	shift
 	;;
--*)	echo usage: $(basename $0) [-a] [memo ...] >&2
+-e)	t=''
+	shift
+	;;
+-*)	echo usage: $(basename "$0") [-a] [-e] [memo ...] >&2
 	exit 2
 	;;
 esac
@@ -28,7 +31,10 @@ then
 	echo "# $s" >"$d/$s.txt"
 fi
 
-printf "\n[%s]\n" "$t" >>"$d/$s.txt"
+if [[ -n $t ]]
+then
+	printf "\n[%s]\n" "$t" >>"$d/$s.txt"
+fi
 if (( $# > 0 ))
 then
 	echo "$@" >>"$d/$s.txt"
