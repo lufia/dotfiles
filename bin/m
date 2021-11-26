@@ -1,0 +1,37 @@
+#!/bin/bash
+
+s=$(date +%Y-%m-%d)
+d=~/lib/notes
+
+edit=vi
+if [[ -n $EDITOR ]]
+then
+	edit="$EDITOR"
+elif [[ -n $GIT_EDITOR ]]
+then
+	edit="$GIT_EDITOR"
+fi
+
+case $1 in
+-a)	edit=B
+	shift
+	;;
+-*)	echo usage: $(basename $0) [-a] [memo ...] >&2
+	exit 2
+	;;
+esac
+
+if ! [[ -f $d/$s.txt ]]
+then
+	mkdir -p "$d"
+	echo "# $s" >"$d/$s.txt"
+fi
+
+if (( $# > 0 ))
+then
+	echo "" >>"$d/$s.txt"
+	echo "$@" >>"$d/$s.txt"
+	exit 0
+fi
+
+exec "$edit" "$d/$s.txt"
