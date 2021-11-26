@@ -2,6 +2,7 @@
 
 s=$(date +%Y-%m-%d)
 d=~/lib/notes
+t=$(date +%H:%M)
 
 edit=vi
 if [[ -n $EDITOR ]]
@@ -27,9 +28,9 @@ then
 	echo "# $s" >"$d/$s.txt"
 fi
 
+printf "\n[%s]\n" "$t" >>"$d/$s.txt"
 if (( $# > 0 ))
 then
-	echo "" >>"$d/$s.txt"
 	echo "$@" >>"$d/$s.txt"
 	exit 0
 fi
