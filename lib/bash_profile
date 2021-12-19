@@ -24,49 +24,13 @@ export GOROOT_BOOTSTRAP=~/go1.9
 
 export CSEARCHINDEX=~/lib/csearchindex
 
-# XDG; git etc
-#XDG_CONFIG_HOME=~/lib
-
 # GCP
 export PATH=$PATH:~/pkg/google-cloud-sdk/bin
 
-# Homebrew
-export HOMEBREW_NO_AUTO_UPDATE=1
-
-# Nixpkgs
-#export NIX_PATH=nixpkgs=~/nixpkgs:$NIX_PATH
-
 # NodeJS
-export N_PREFIX=~/pkg/nodejs
 export NPM_CONFIG_USERCONFIG=~/lib/npmrc
-export PATH=$PATH:~/pkg/nodejs/bin
-export MANPATH=$(manpath):~/pkg/nodejs/share/man
-
-# Python
-export PYTHONUSERBASE=~/pkg/python
-export PATH=$PATH:~/pkg/python/bin
-
-# Perl
-export PERL_LOCAL_LIB_ROOT=~/pkg/perl
-export PERL5LIB=$PERL_LOCAL_LIB_ROOT/lib/perl5
-export PERL_CPANM_HOME=~/Library/Caches/cpanm
-export PATH=$PATH:$PERL_LOCAL_LIB_ROOT/bin
-
-export PLENV_ROOT=~/pkg/plenv
-export PATH=$PLENV_ROOT/shims:$PATH
-
-# Ruby
-#export GEM_HOME=~/pkg/gem/ruby/$(ruby -e 'puts RUBY_VERSION')
-#export PATH=$PATH:$GEM_HOME/bin
-
-# Cocoapods
-#export CP_HOME_DIR=~/pkg/cocoapods
 
 export LESSHISTFILE=-
-
-# Envs
-export NODENV_ROOT=~/pkg/nodenv
-export RBENV_ROOT=~/pkg/rbenv
 
 if [[ $TERM = dumb ]]
 then
