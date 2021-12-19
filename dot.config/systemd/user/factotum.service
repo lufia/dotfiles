@@ -1,10 +1,11 @@
 [Unit]
 Description=factotum
-After=network.target
+After=default.target
 
 [Service]
 Type=forking
 Environment=PLAN9=/usr/local/plan9
+ExecStartPre=/etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 ExecStart=/usr/local/plan9/bin/factotum
 
 [Install]
