@@ -1,0 +1,36 @@
+#!/bin/bash
+# deb2pkg: convert deb package to ArchLinux package
+# usage: deb2pkg [file]
+
+set -eu
+
+if test -d data
+then
+	echo 'deb2pkg: data exists' >&2
+	exit 1
+fi
+ar x $1
+mkdir -p data
+tar xf data.tar.xz -C data
+
+# Sometimes deb package contains systemd unit files on /lib,
+# but on ArchLinux /lib is locked by filesystems.
+# Thus we need to change its directory to /usr/lib.
+if test -d data/lib
+then
+	mkdir -p data/usr
+	mv data/lib data/usr/lib
+fi
+
+tar xf control.tar.xz ./control
+find data -type f | sed 's!^data/!!' >/tmp/deb2pkg.$$
+mv /tmp/deb2pkg.$$ data/.FILELIST
+
+sed -n 's/^package:/pkgname =/ip' control >data/.PKGINFO
+sed -n 's/-/_/g; s/$/-1/; s/^version:/pkgver =/ip' control >>data/.PKGINFO
+sed -n 's/^description:/pkgdesc =/ip' control >>data/.PKGINFO
+sed -n 's/amd64/x86_64/; s/^architecture:/arch =/ip' control >>data/.PKGINFO
+sed -n 's/^installed-size:/size =/ip; s/-/_/' control >>data/.PKGINFO
+echo 'license =' >>data/.PKGINFO
+(cd data && tar c * .FILELIST .PKGINFO) | gzip -9 >pkg.tar.gz
+rm -r data control *.xz debian-binary
