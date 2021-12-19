@@ -10,6 +10,8 @@
 # XDG Base Directory
 #export XDG_CONFIG_HOME=~/.config
 
+export PATH=$PATH:~/bin
+
 # Plan 9
 export PLAN9=/usr/local/plan9
 export PATH=$PATH:$PLAN9/bin
