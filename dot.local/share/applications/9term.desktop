@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=9term
+Comment=Plan 9 terminal
+Icon=/usr/local/plan9/mac/spaceglenda.png
+;Path=/usr/local/plan9/bin
+Exec=9term
+Terminal=false
+Categories=Development;Utility

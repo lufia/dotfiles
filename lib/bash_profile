@@ -17,7 +17,9 @@ export PLAN9=/usr/local/plan9
 export PATH=$PATH:$PLAN9/bin
 
 #/mnt/font/HiraKakuPro-W3/14a/font
-export font=/mnt/font/GoMono/14a/font
+#export font=/mnt/font/GoMono/14a/font
+#export font=/mnt/font/NotoSansMonoCJKjp-Regular/14a/font
+export font=/mnt/font/NotoSansCJKjp-Regular/14a/font
 export secstore=localhost	# /lib/ndbに書くべきか...
 export BROWSER=firefox		# safari, firefox or google-chrome
 
