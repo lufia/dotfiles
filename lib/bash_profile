@@ -37,6 +37,10 @@ export PATH=$PATH:~/pkg/google-cloud-sdk/bin
 # NodeJS
 export NPM_CONFIG_USERCONFIG=~/lib/npmrc
 
+# Docker
+export DOCKER_CONFIG=~/.config/docker
+
+export HISTFILE=~/.local/state/bash/history
 export LESSHISTFILE=-
 
 if [[ $TERM = dumb ]]
