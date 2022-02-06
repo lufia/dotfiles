@@ -42,6 +42,7 @@ export DOCKER_CONFIG=~/.config/docker
 
 export HISTFILE=~/.local/state/bash/history
 export LESSHISTFILE=-
+export INPUTRC=~/.config/readline/inputrc
 
 if [[ $TERM = dumb ]]
 then
