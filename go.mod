@@ -10,7 +10,7 @@ require (
 	github.com/google/ko v0.9.3
 	github.com/nektos/act v0.2.25
 	github.com/x-motemen/blogsync v0.12.0
-	golang.org/x/review v1.0.2
+	golang.org/x/review v1.0.3
 	golang.org/x/tools/gopls v0.7.5
 	robpike.io/ivy v0.2.3
 	rsc.io/2fa v1.2.0
