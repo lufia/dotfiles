@@ -26,5 +26,4 @@ import (
 	_ "rsc.io/2fa"
 	_ "rsc.io/grepdiff"
 	_ "rsc.io/todo"
-	_ "sigs.k8s.io/kustomize/kustomize/v3"
 )

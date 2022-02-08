@@ -33,5 +33,4 @@ go install github.com/go-delve/delve/cmd/dlv
 go install github.com/nektos/act
 go install github.com/golangci/golangci-lint/cmd/golangci-lint
 go install github.com/x-motemen/blogsync
-go install sigs.k8s.io/kustomize/kustomize/v3
 go install github.com/google/ko
