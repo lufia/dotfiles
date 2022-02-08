@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=IBus Daemon
+Exec=ibus-daemon -drx --panel=/usr/lib/kimpanel-ibus-panel
