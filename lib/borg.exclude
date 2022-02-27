@@ -1,0 +1,16 @@
+/dev/*
+/proc/*
+/sys/*
+/tmp/*
+/run/*
+/mnt/*
+/media/*
+/lost+found
+/var/run/*
+/swapfile
+/home/*.homedir
+/home/*/.cache
+/home/*/.identity
+/home/*/.local/share/Trash
+/home/*/Downloads/*
+/home/*/pkg/*
