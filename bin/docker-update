@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -eu
+
+for i in $(docker image ls --format '{{.Repository}}:{{.Tag}}')
+do
+	docker pull -q $i
+done
+docker image prune
