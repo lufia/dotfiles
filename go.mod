@@ -8,10 +8,10 @@ require (
 	github.com/golang/protobuf v1.5.2
 	github.com/golangci/golangci-lint v1.47.2
 	github.com/google/ko v0.11.2
-	github.com/nektos/act v0.2.28
+	github.com/nektos/act v0.2.30
 	github.com/x-motemen/blogsync v0.12.0
 	golang.org/x/review v1.0.3
-	golang.org/x/tools/gopls v0.8.4
+	golang.org/x/tools/gopls v0.9.1
 	robpike.io/ivy v0.2.8
 	rsc.io/2fa v1.2.0
 	rsc.io/grepdiff v1.0.0
@@ -20,8 +20,8 @@ require (
 
 require (
 	github.com/google/codesearch v1.2.0
-	golang.org/x/perf v0.0.0-20211012211434-03971e389cd3
-	golang.org/x/tools v0.1.12-0.20220628192153-7743d1d949f1
+	golang.org/x/perf v0.0.0-20220722155240-3d85ee92886d
+	golang.org/x/tools v0.1.12-0.20220713141851-7464a5a40219
 )
 
 require (
@@ -216,7 +216,7 @@ require (
 	github.com/quasilyte/gogrep v0.0.0-20220120141003-628d8b3623b5 // indirect
 	github.com/quasilyte/regex/syntax v0.0.0-20200407221936-30656e2c4a95 // indirect
 	github.com/quasilyte/stdinfo v0.0.0-20220114132959-f7386bf02567 // indirect
-	github.com/rhysd/actionlint v1.6.13 // indirect
+	github.com/rhysd/actionlint v1.6.15 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/robfig/cron v1.2.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
@@ -229,7 +229,7 @@ require (
 	github.com/shazow/go-diff v0.0.0-20160112020656-b6b7b6733b8c // indirect
 	github.com/sigstore/cosign v1.3.2-0.20211120003522-90e2dcfe7b92 // indirect
 	github.com/sigstore/sigstore v1.0.2-0.20211115214857-534e133ebf9d // indirect
-	github.com/sirupsen/logrus v1.8.1 // indirect
+	github.com/sirupsen/logrus v1.9.0 // indirect
 	github.com/sivchari/containedctx v1.0.2 // indirect
 	github.com/sivchari/nosnakecase v1.5.0 // indirect
 	github.com/sivchari/tenv v1.7.0 // indirect
@@ -261,7 +261,7 @@ require (
 	github.com/xanzy/ssh-agent v0.3.1 // indirect
 	github.com/yagipy/maintidx v1.0.0 // indirect
 	github.com/yeya24/promlinter v0.2.0 // indirect
-	github.com/yuin/goldmark v1.4.1 // indirect
+	github.com/yuin/goldmark v1.4.12 // indirect
 	gitlab.com/bosi/decorder v0.2.2 // indirect
 	go.opencensus.io v0.23.0 // indirect
 	go.starlark.net v0.0.0-20200821142938-949cc6f4b097 // indirect
@@ -276,10 +276,10 @@ require (
 	golang.org/x/net v0.0.0-20220520000938-2e3eb7b945c2 // indirect
 	golang.org/x/oauth2 v0.0.0-20220411215720-9780585627b5 // indirect
 	golang.org/x/sync v0.0.0-20220513210516-0976fa681c29 // indirect
-	golang.org/x/sys v0.0.0-20220702020025-31831981b65f // indirect
+	golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/text v0.3.7 // indirect
-	golang.org/x/vuln v0.0.0-20220503210553-a5481fb0c8be // indirect
+	golang.org/x/vuln v0.0.0-20220613164644-4eb5ba49563c // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/ini.v1 v1.66.6 // indirect
