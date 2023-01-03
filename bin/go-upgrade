@@ -1,6 +1,10 @@
 #!/bin/sh
+# go-upgrade: upgrade local commands already installed
 
-#/home/lufia/bin/pingu: go1.18.3
+# This script scrapes output of go version -m.
+# Its output format is:
+#
+# /home/lufia/bin/pingu: go1.18.3
 #	path	github.com/sheepla/pingu
 #	mod	github.com/sheepla/pingu	v0.0.2	h1:4t3Z8cGYs+GonrC0UEhXPlcS+e8goP8A1Sha6eeHZAc=
 
@@ -10,10 +14,11 @@ function usage()
 	exit 2
 }
 
+flagu=0
 while getopts :u OPT
 do
 	case "$OPT" in
-	u)	update=1 ;;
+	u)	flagu=1 ;;
 	*)	usage ;;
 	esac
 done
@@ -27,10 +32,15 @@ function needupdate()
 		return 0
 	fi
 	local p="$(go version -m "$1" | awk '$1 == "path" { print $2 }')"
+	local v="$(go version -m "$1" | awk '$1 == "mod" { print $3 }')"
+	if [[ $flagu = 1 ]] || [[ $v = '(devel)' ]]
+	then
+		v=latest
+	fi
 	local rver="$(go version | cut -d ' ' -f 3)"
 	if ! [[ $lver = $rver ]]
 	then
-		echo "go install $p@latest # $lver -> $rver"
+		echo "go install $p@$v # $lver -> $rver"
 	fi
 }
 
