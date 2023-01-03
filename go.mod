@@ -12,7 +12,7 @@ require (
 	github.com/x-motemen/blogsync v0.12.3
 	golang.org/x/review v1.2.0
 	golang.org/x/tools/gopls v0.11.0
-	robpike.io/ivy v0.2.10
+	robpike.io/ivy v0.2.11
 	rsc.io/2fa v1.2.0
 	rsc.io/grepdiff v1.0.0
 	rsc.io/todo v0.0.3
