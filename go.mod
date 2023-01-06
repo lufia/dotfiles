@@ -20,7 +20,7 @@ require (
 
 require (
 	github.com/google/codesearch v1.2.0
-	golang.org/x/perf v0.0.0-20220722155240-3d85ee92886d
+	golang.org/x/perf v0.0.0-20221222172245-91a04616dc65
 	golang.org/x/tools v0.5.0
 )
 
@@ -154,6 +154,7 @@ require (
 	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/google/go-containerregistry v0.11.0 // indirect
 	github.com/google/go-dap v0.6.0 // indirect
+	github.com/google/safehtml v0.1.0 // indirect
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
 	github.com/gordonklaus/ineffassign v0.0.0-20210914165742-4cc7213b9bc8 // indirect
 	github.com/gostaticanalysis/analysisutil v0.7.1 // indirect
