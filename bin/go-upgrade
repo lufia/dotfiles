@@ -24,23 +24,36 @@ do
 done
 shift $((OPTIND - 1))
 
+declare -A modules
+
+function modversion()
+{
+	if [[ -z "${modules["$1"]}" ]]
+	then
+		modules["$1"]="$(go list -m -f '{{.Version}}' "$1@latest")"
+	fi
+	echo "${modules["$1"]}"
+}
+
 function needupdate()
 {
 	local lver="$(go version "$1" 2>/dev/null | sed 's/.*: //')"
 	if [[ -z $lver ]]
 	then
-		return 0
+		return
 	fi
 	local p="$(go version -m "$1" | awk '$1 == "path" { print $2 }')"
+	local mod="$(go version -m "$1" | awk '$1 == "mod" { print $2 }')"
 	local v="$(go version -m "$1" | awk '$1 == "mod" { print $3 }')"
-	if [[ $flagu = 1 ]] || [[ $v = '(devel)' ]]
+	local latest=latest
+	if ! [[ $flagu = 1 ]] && ! [[ $v = '(devel)' ]]
 	then
-		v=latest
+		latest="$(modversion "$mod")"
 	fi
 	local rver="$(go version | cut -d ' ' -f 3)"
-	if ! [[ $lver = $rver ]]
+	if ! [[ $lver = $rver ]] || ! [[ $v = $latest ]]
 	then
-		echo "go install $p@$v # $lver -> $rver"
+		echo "go install $p@$v # $lver -> $rver, $v -> $latest"
 	fi
 }
 
