@@ -12,5 +12,6 @@
 /home/*/.cache
 /home/*/.identity
 /home/*/.local/share/Trash
+/home/*/.var
 /home/*/Downloads/*
 /home/*/pkg/*
