@@ -1,6 +1,5 @@
 prefix = ~/pkg/npm
 cache = ~/.cache/npm
-tmp = $XDG_RUNTIME_DIR/npm
 
-init.author.email = lufia@lufia.org
-init.author.name = lufia
+--init-author-email=lufia@lufia.org
+--init-author-name=lufia
