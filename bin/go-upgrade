@@ -53,7 +53,7 @@ function needupdate()
 	local rver="$(go version | cut -d ' ' -f 3)"
 	if ! [[ $lver = $rver ]] || ! [[ $v = $latest ]]
 	then
-		echo "go install $p@$v # $lver -> $rver, $v -> $latest"
+		echo "go install $p@$latest # $lver -> $rver, $v -> $latest"
 	fi
 }
 
