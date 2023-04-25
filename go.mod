@@ -9,7 +9,7 @@ require (
 	github.com/golangci/golangci-lint v1.52.2
 	github.com/google/ko v0.13.0
 	github.com/nektos/act v0.2.44
-	github.com/x-motemen/blogsync v0.13.0
+	github.com/x-motemen/blogsync v0.13.5
 	golang.org/x/review v1.2.0
 	golang.org/x/tools/gopls v0.11.0
 	robpike.io/ivy v0.2.11
@@ -24,7 +24,7 @@ require (
 	github.com/lufia/dotsync v0.0.0-20230401142356-d85a73b99c15
 	golang.org/x/perf v0.0.0-20230227161431-f7320a6d63e8
 	golang.org/x/tools v0.8.0
-	google.golang.org/protobuf v1.29.0
+	google.golang.org/protobuf v1.30.0
 )
 
 require (
@@ -293,7 +293,7 @@ require (
 	github.com/tommy-muehle/go-mnd/v2 v2.5.1 // indirect
 	github.com/ultraware/funlen v0.0.3 // indirect
 	github.com/ultraware/whitespace v0.0.5 // indirect
-	github.com/urfave/cli/v2 v2.24.1 // indirect
+	github.com/urfave/cli/v2 v2.25.1 // indirect
 	github.com/uudashr/gocognit v1.0.6 // indirect
 	github.com/vbatts/tar-split v0.11.2 // indirect
 	github.com/xanzy/ssh-agent v0.3.1 // indirect
