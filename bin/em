@@ -1,0 +1,23 @@
+#!/usr/bin/env rc
+
+rfork e
+
+flagfmt='e pattern'
+args='[file ...]'
+
+if(! ifs=() eval `{9 getflags $*}){
+    9 usage
+    exit usage
+}
+if(~ $#flage 0){
+	if(~ $#* 0){
+		9 usage
+		exit usage
+	}
+	flage=$1
+	shift
+}
+
+e=`{unicode 1b}
+ifs=() {p=`{echo -n $"flage | sed 's/!/\\!/g'}}
+exec 9 sed 's!('^$"p^')!'^$e^'[031m\1'^$e^'[039m!g'
