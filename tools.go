@@ -16,6 +16,7 @@ import (
 	_ "github.com/x-motemen/blogsync"
 	_ "golang.org/x/perf/cmd/benchstat"
 	_ "golang.org/x/review/git-codereview"
+	_ "golang.org/x/tools/cmd/deadcode"
 	_ "golang.org/x/tools/cmd/go-contrib-init"
 	_ "golang.org/x/tools/cmd/godoc"
 	_ "golang.org/x/tools/cmd/goimports"
