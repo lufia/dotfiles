@@ -5,6 +5,7 @@ package main
 
 import (
 	_ "9fans.net/go/acme/editinacme"
+	_ "ariga.io/atlas/cmd/atlas"
 	_ "github.com/go-delve/delve/cmd/dlv"
 	_ "github.com/golangci/golangci-lint/cmd/golangci-lint"
 	_ "github.com/google/codesearch/cmd/cgrep"
