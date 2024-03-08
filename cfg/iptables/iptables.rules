@@ -9,5 +9,6 @@
 -A INPUT -p tcp --tcp-flags ALL ALL -j DROP
 -A INPUT -p tcp -m state --state ESTABLISHED,RELATED -j ACCEPT
 -A INPUT -p udp --sport 53 -j ACCEPT
+-A INPUT -p udp --sport 123 -j ACCEPT
 
 COMMIT
