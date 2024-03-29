@@ -1,0 +1,17 @@
+#!/bin/awk -f
+
+FILENAME != filename {
+	print "---"
+	filename = FILENAME
+	match($0, /^[ \t]+/)
+	indent = RSTART+RLENGTH
+}
+{	s = substr($0, indent)
+	match(s, /^[ \t]*/)
+	s = substr(s, RSTART+RLENGTH)
+	n = RSTART+RLENGTH-1 # markdown list indent
+
+	if(match(s, /^\[([a-zA-Z0-9_-]+)\.icon\] ?/, a) > 0)
+		s = sprintf("**%s**: %s", a[1], substr(s, RSTART+RLENGTH))
+	printf "%*s- %s\n", n*2, "", s
+}
