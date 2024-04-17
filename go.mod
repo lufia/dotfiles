@@ -24,6 +24,7 @@ require (
 	github.com/lufia/dotsync v0.0.0-20240408222319-dd0b33f9e1db
 	golang.org/x/perf v0.0.0-20240404204407-f3e401e020e4
 	golang.org/x/tools v0.20.0
+	golang.org/x/tools/gopls v0.15.3
 	golang.org/x/vuln v1.1.0
 	google.golang.org/protobuf v1.33.1-0.20240408130810-98873a205002
 )
@@ -417,6 +418,7 @@ require (
 	k8s.io/utils v0.0.0-20230726121419-3b25d923346b // indirect
 	mvdan.cc/gofumpt v0.6.0 // indirect
 	mvdan.cc/unparam v0.0.0-20240104100049-c549a3470d14 // indirect
+	mvdan.cc/xurls/v2 v2.5.0 // indirect
 	nhooyr.io/websocket v1.8.7 // indirect
 	sigs.k8s.io/kind v0.22.0 // indirect
 	sigs.k8s.io/yaml v1.4.0 // indirect

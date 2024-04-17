@@ -25,7 +25,7 @@ import (
 	_ "golang.org/x/tools/cmd/goyacc"
 	_ "golang.org/x/tools/cmd/present"
 	_ "golang.org/x/tools/cmd/stringer"
-	//_ "golang.org/x/tools/gopls"
+	_ "golang.org/x/tools/gopls"
 	_ "golang.org/x/vuln/cmd/govulncheck"
 	_ "robpike.io/ivy"
 	_ "rsc.io/2fa"
