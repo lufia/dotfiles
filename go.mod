@@ -5,7 +5,7 @@ go 1.22.0
 require (
 	9fans.net/go v0.0.5 // bugfix
 	github.com/go-delve/delve v1.22.1
-	github.com/golang/protobuf v1.5.3 // indirect
+	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/golangci/golangci-lint v1.57.2
 	github.com/google/ko v0.15.2
 	github.com/nektos/act v0.2.61
@@ -19,13 +19,13 @@ require (
 
 require (
 	ariga.io/atlas/cmd/atlas v0.13.1
-	github.com/fullstorydev/grpcurl v1.8.9
+	github.com/fullstorydev/grpcurl v1.9.1
 	github.com/google/codesearch v1.2.0
 	github.com/lufia/dotsync v0.0.0-20240408222319-dd0b33f9e1db
 	golang.org/x/perf v0.0.0-20240404204407-f3e401e020e4
 	golang.org/x/tools v0.20.0
-	golang.org/x/vuln v1.0.4
-	google.golang.org/protobuf v1.33.0
+	golang.org/x/vuln v1.1.0
+	google.golang.org/protobuf v1.33.1-0.20240408130810-98873a205002
 )
 
 require (
@@ -102,7 +102,7 @@ require (
 	github.com/bombsimon/wsl/v4 v4.2.1 // indirect
 	github.com/breml/bidichk v0.2.7 // indirect
 	github.com/breml/errchkjson v0.3.6 // indirect
-	github.com/bufbuild/protocompile v0.6.0 // indirect
+	github.com/bufbuild/protocompile v0.10.0 // indirect
 	github.com/butuzov/ireturn v0.3.0 // indirect
 	github.com/butuzov/mirror v1.1.0 // indirect
 	github.com/catenacyber/perfsprint v0.7.1 // indirect
@@ -225,7 +225,7 @@ require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect
 	github.com/jgautheron/goconst v1.7.1 // indirect
-	github.com/jhump/protoreflect v1.15.3 // indirect
+	github.com/jhump/protoreflect v1.16.0 // indirect
 	github.com/jingyugao/rowserrcheck v1.1.1 // indirect
 	github.com/jirfag/go-printf-func-name v0.0.0-20200119135958-7558a9eaa5af // indirect
 	github.com/jjti/go-spancheck v0.5.3 // indirect
