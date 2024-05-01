@@ -1,0 +1,10 @@
+[Unit]
+Description=sshuttle for %i
+
+[Service]
+Type=simple
+ExecStartPre=/bin/test -f %h/.config/sshuttle/%i.conf
+ExecStart=/usr/bin/sshuttle @%h/.config/sshuttle/%i.conf
+
+[Install]
+WantedBy=default.target
