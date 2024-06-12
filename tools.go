@@ -5,7 +5,7 @@ package main
 
 import (
 	_ "9fans.net/go/acme/editinacme"
-	_ "ariga.io/atlas/cmd/atlas"
+	_ "github.com/fullstorydev/grpcurl/cmd/grpcurl"
 	_ "github.com/go-delve/delve/cmd/dlv"
 	_ "github.com/golangci/golangci-lint/cmd/golangci-lint"
 	_ "github.com/google/codesearch/cmd/cgrep"
@@ -27,12 +27,9 @@ import (
 	_ "golang.org/x/tools/cmd/stringer"
 	_ "golang.org/x/tools/gopls"
 	_ "golang.org/x/vuln/cmd/govulncheck"
+	_ "google.golang.org/protobuf/cmd/protoc-gen-go"
 	_ "robpike.io/ivy"
 	_ "rsc.io/2fa"
 	_ "rsc.io/grepdiff"
 	_ "rsc.io/todo"
-
-	_ "ariga.io/atlas/cmd/atlas"
-	_ "github.com/fullstorydev/grpcurl/cmd/grpcurl"
-	_ "google.golang.org/protobuf/cmd/protoc-gen-go"
 )
