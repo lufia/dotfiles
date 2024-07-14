@@ -1,6 +1,6 @@
 [Unit]
 Description=factotum
-After=default.target
+After=graphical-session.target
 
 [Service]
 Type=forking
@@ -10,4 +10,4 @@ ExecStart=/usr/local/plan9/bin/factotum
 ExecStartPost=bash -c 'systemd-creds --user decrypt --name=secstore.secret %h/lib/secstore.key | secstore -iG factotum | 9p write -l factotum/ctl'
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical-session.target
