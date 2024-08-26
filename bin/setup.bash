@@ -3,7 +3,7 @@
 
 # golang.org/x/tools
 go install golang.org/x/perf/cmd/benchstat
-go install golang.org/x/tools/cmd/godoc
+go install golang.org/x/pkgsite/cmd/pkgsite@latest
 go install golang.org/x/tools/cmd/goimports
 go get -u golang.org/x/tools/cmd/guru
 go install golang.org/x/tools/cmd/present
