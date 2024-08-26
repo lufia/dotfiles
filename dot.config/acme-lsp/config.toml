@@ -12,6 +12,9 @@ CodeActionsOnPut = ["source.organizeImports"]
 		[Servers.gopls.Options]
 		hoverKind = "FullDocumentation"
 
+	[Servers.typescript-ls]
+	Command = ["typescript-language-server", "--stdio"]
+
 [[FilenameHandlers]]
   Pattern = "[/\\\\]go\\.mod$"
   LanguageID = "go.mod"
@@ -26,3 +29,18 @@ CodeActionsOnPut = ["source.organizeImports"]
   Pattern = "\\.go$"
   LanguageID = "go"
   ServerKey = "gopls"
+
+[[FilenameHandlers]]
+  Pattern = "\\.ts$"
+  LanguageID = "typescript"
+  ServerKey = "typescript-ls"
+
+[[FilenameHandlers]]
+  Pattern = "\\.mts$"
+  LanguageID = "typescript"
+  ServerKey = "typescript-ls"
+
+[[FilenameHandlers]]
+  Pattern = "\\.tsx$"
+  LanguageID = "typescriptreact"
+  ServerKey = "typescript-ls"
