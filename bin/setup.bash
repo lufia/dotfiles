@@ -9,7 +9,6 @@ go install golang.org/x/tools/cmd/gonew@latest
 go install golang.org/x/tools/cmd/goyacc@latest
 go install golang.org/x/tools/cmd/present@latest
 go install golang.org/x/tools/cmd/stringer@latest
-go install golang.org/x/tools/gopls@latest
 go install golang.org/x/vuln/cmd/govulncheck@latest
 
 # github.com/golang
@@ -23,6 +22,8 @@ go install golang.org/x/review/git-codereview@latest
 go install rsc.io/2fa@latest
 go install rsc.io/todo
 go get -u rsc.io/github/issue
+go install 9fans.net/acme-lsp/cmd/acme-lsp@latest
+go install 9fans.net/acme-lsp/cmd/L@latest
 go install 9fans.net/go/acme/editinacme@latest
 go install robpike.io/ivy@latest
 go install rsc.io/grepdiff
@@ -32,6 +33,7 @@ go install github.com/x-motemen/blogsync@latest
 go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest
 
 # use pacman instead
+#go install golang.org/x/tools/gopls@latest -> gopls
 #go install github.com/cli/cli/cmd/gh -> github-cli
 #go install github.com/hashicorp/terraform -> terraform
 #go install github.com/nektos/act -> act
