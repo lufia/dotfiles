@@ -4,6 +4,7 @@
 # golang.org/x
 go install golang.org/x/perf/cmd/benchstat@latest
 go install golang.org/x/pkgsite/cmd/pkgsite@latest
+#go install golang.org/x/tools/cmd/eg@latest
 go install golang.org/x/tools/cmd/goimports@latest
 go install golang.org/x/tools/cmd/gonew@latest
 go install golang.org/x/tools/cmd/goyacc@latest
