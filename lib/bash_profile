@@ -29,7 +29,7 @@ export GOPATH=~
 export PATH=$GOPATH/bin:$PATH	# ~/binなので先頭に必要
 export GOROOT_BOOTSTRAP=~/go1.9
 
-export CSEARCHINDEX=~/lib/csearchindex
+export CSEARCHINDEX=~/.cache/csearchindex
 
 # GCP
 export PATH=$PATH:~/pkg/google-cloud-sdk/bin
