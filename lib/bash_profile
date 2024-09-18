@@ -15,6 +15,10 @@ export PATH=$PATH:~/bin
 # Plan 9
 export PLAN9=/usr/local/plan9
 export PATH=$PATH:$PLAN9/bin
+export notosansfont=/mnt/font/NotoSansCJKjp-Regular/22a/font
+export notosansmonofont=/mnt/font/NotoSansMonoCJKjp-Regular/22a/font
+export gofont=/mnt/font/GoRegular/22a/font
+export gomonofont=/mnt/font/GoMono/22a/font
 
 #/mnt/font/HiraKakuPro-W3/14a/font
 #export font=/mnt/font/GoMono/14a/font
