@@ -7,13 +7,10 @@ go install golang.org/x/pkgsite/cmd/pkgsite@latest
 #go install golang.org/x/tools/cmd/eg@latest
 go install golang.org/x/tools/cmd/goimports@latest
 go install golang.org/x/tools/cmd/gonew@latest
-go install golang.org/x/tools/cmd/goyacc@latest
-go install golang.org/x/tools/cmd/present@latest
-go install golang.org/x/tools/cmd/stringer@latest
+#go install golang.org/x/tools/cmd/goyacc@latest
+#go install golang.org/x/tools/cmd/present@latest
+#go install golang.org/x/tools/cmd/stringer@latest
 go install golang.org/x/vuln/cmd/govulncheck@latest
-
-# github.com/golang
-go install github.com/golang/protobuf/protoc-gen-go@latest
 
 # contributing to go
 go install golang.org/x/tools/cmd/go-contrib-init@latest

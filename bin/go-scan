@@ -1,0 +1,39 @@
+#!/bin/sh
+
+set -eu
+
+list_pkgs()
+{
+	local f
+
+	f=$(cat <<-'END'
+	{{range .Imports}}{{.}}
+	{{end}}
+	END
+	)
+	go list -f "$f" "$@" |
+	sort -u |
+	awk -F/ '/\./'
+}
+
+if [[ $# = 0 ]]
+then
+	echo "usage: $(basename $0) pattern [path ...]" >&2
+	exit 2
+fi
+pattern="$1"
+shift
+
+for i in "$@"
+do
+	echo searching $i >&2
+	pkgs=$(list_pkgs "$i")
+	for pkg in $pkgs
+	do
+		if [[ $pkg =~ $pattern ]]
+		then
+			echo $pattern $i
+		fi
+	done
+	sh $0 "$pattern" $pkgs
+done

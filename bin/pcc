@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+root=~/src/github.com/lufia/plan9-contrib
+cc -I "$root/386/include/ape" -I "$root/sys/include/ape" "$@"
