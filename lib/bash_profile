@@ -52,3 +52,12 @@ if [[ $TERM = dumb ]]
 then
 	export NO_COLOR=1
 fi
+
+if test -d ~/lib/profile.d
+then
+	for i in ~/lib/profile.d/*.sh
+	do
+		source "$i"
+	done
+	unset i
+fi

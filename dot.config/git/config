@@ -2,7 +2,7 @@
 	name = lufia
 	email = lufia@lufia.org
 [core]
-	excludesfile = ~/lib/git/gitignore_global
+	excludesfile = ~/.config/git/gitignore_global
 	precomposeunicode = true
 [push]
 	default = simple
@@ -10,12 +10,12 @@
 	diff = auto
 	ui = auto
 [init]
-	templatedir = ~/lib/git/template
+	templatedir = ~/.config/git/template
 	defaultBranch = main
 [credential]
 	helper = factotum
 [http]
-	cookiefile = ~/lib/git/gitcookies
+	cookiefile = ~/.config/git/gitcookies
 [credential "https://source.developers.google.com"]
 	helper = gcloud.sh
 [merge]
